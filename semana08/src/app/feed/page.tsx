@@ -61,9 +61,9 @@ export default function Feed() {
             content: content,
             publishedAt: new Date().toISOString(),
             author: {
-                name: "Gustavo Souza",
-                role: "Full-Stack Developer",
-                avatarUrl: "https://github.com/gusttavosouza.png"
+                name: "Alan de Medeiros",
+                role: "Full Jogador de CS-GO",
+                avatarUrl: "https://github.com/Alan-de-Medeiros.png"
             }
         };
         await axios.post("http://localhost:3001/posts", post);
@@ -81,9 +81,9 @@ export default function Feed() {
                     <Image src={cover} alt="cover" className="cover" />
 
                     <div className="profile">
-                        <Avatar src="https://github.com/gusttavosouza.png" hasBorder />
-                        <strong>Gustavo Souza</strong>
-                        <span>Full-Stack Developer</span>
+                        <Avatar src="https://github.com/Alan-de-Medeiros.png" hasBorder />
+                        <strong>Alan de Medeiros</strong>
+                        <span>Full Player of MK1</span>
 
                         <footer>
                             <button className="button-edit-profile">

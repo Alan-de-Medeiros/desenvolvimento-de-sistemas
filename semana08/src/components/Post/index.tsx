@@ -61,9 +61,9 @@ export default function Post({ post, setPost }: PostProps) {
             publishedAt: new Date().toISOString(),
             like: 0,
             author: {
-                name: "Gustavo Souza",
-                role: "Full-stack balbalba",
-                avatarUrl: "http://github.com/gustavoroberto1.png"
+                name: "Alan de Medeiros",
+                role: "Full Jogador de MK1",
+                avatarUrl: "https://github.com/Alan-de-Medeiros.png"
             }
         }
 
