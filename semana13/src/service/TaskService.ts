@@ -43,6 +43,9 @@ class TaskService {
         return task;
     }
 
+    public deleteTask(id: string){
+        this.taskList = this.taskList.filter(task => task.getId() !== id);
+    }
 }
 
 export const taskService = new TaskService();

@@ -50,4 +50,10 @@ export async function taskController(app: FastifyInstance) {
         }
     })
 
+    app.delete('/task/:id', (request, reply) => {
+        const { id } = request.params as { id: string };
+        taskService.deleteTask(id);
+        return reply.code(200).send();
+    })
+
 }
